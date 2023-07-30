@@ -9,4 +9,4 @@
 - Created and manipulated 2d array, including transforming it into a 1d array.
 - Used an array to store a queryselectorAll instead of a node list.
 
-<a src='https://github.com/RaulUrdanetaG/tic-tac-toe' target='_Blank'>Live Preview</a>👈
+[Live Demo](https://raulurdanetag.github.io/tic-tac-toe/) :point_left:

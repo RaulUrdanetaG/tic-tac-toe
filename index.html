@@ -1,11 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/node_modules/normalize.css/normalize.css">
 </head>
+
 <body>
+
+    <div class="main-container">
+        <div class="header">
+            <h1>Tic-Tac-Toe</h1>
+        </div>
+        <div class="main">
+            <h1 id="game-info">Player One's Turn</h1>
+            <div class="game-board">
+                <div class="field r b"></div>
+                <div class="field r b"></div>
+                <div class="field b"></div>
+                <div class="field r b"></div>
+                <div class="field r b"></div>
+                <div class="field b"></div>
+                <div class="field r"></div>
+                <div class="field r"></div>
+                <div class="field"></div>
+            </div>
+            <button id="restart-button">Restart</button>
+        </div>
+        <div class="footer">
+            <h3>Made by </h3>
+            <a href="https://github.com/RaulUrdanetaG" target="_blank"><img src="./images/github.png"
+                    alt="Github logo"></a>
+            <h3><a href="https://github.com/RaulUrdanetaG" target="_blank">Raul Urdaneta</a></h3>
+        </div>
+    </div>
+
     <script src='./script.js'></script>
 </body>
+
 </html>

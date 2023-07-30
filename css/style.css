@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
+:root {
+    --font-color: #edeffd;
+    --primary-color: #202528;
+    --background-color: #181a1e;
+    --color-selected: #a3bdcc;
+    --draw-color:#F96F5D;
+    --win-color:#659B5E;
+    --box-shadow: 0 2rem 3rem var(--color-light);
+    --svg-color: invert(88%) sepia(20%) saturate(156%) hue-rotate(197deg) brightness(104%) contrast(98%);
+}
+
+html,
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    background-color: var(--background-color);
+    font-family: 'Pangolin';
+}
+
+.main-container {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 5fr 1fr;
+    justify-items: center;
+}
+
+.header {
+    display: flex;
+    color: white;
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    min-width: 70vw;
+    font-size: max(1.5rem, 2vw);
+    text-align: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    box-shadow: var(--box-shadow);
+}
+
+.header h1 {
+    display: flex;
+    margin: 0;
+    align-items: center;
+
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    min-width: 70vw;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 15px;
+    align-items: center;
+    color: white;
+    justify-content: space-around;
+    background-color: var(--primary-color);
+    box-shadow: var(--box-shadow);
+}
+
+.main:hover {
+    box-shadow: none;
+}
+
+.main h1 {
+    margin: 0;
+}
+
+.game-board {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+
+.field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 7rem;
+    width: max(100px, 10vw);
+    height: max(100px, 12vh);
+}
+
+.field:hover {
+    cursor: pointer;
+    background-color: var(--color-selected);
+    border-radius: 5px;
+}
+
+
+.b {
+    border-bottom: 4px solid white;
+}
+
+.r {
+    border-right: 4px solid white;
+}
+
+#restart-button {
+    font-size: 2rem;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+    background-color: var(--primary-color);
+}
+
+#restart-button:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+
+.footer {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: white;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer img {
+    width: 30px;
+}
+
+.winner{
+    background-color: var(--win-color);
+    border-radius: 15px;
+}
+
+.draw{
+    background-color: var(--draw-color);
+    border-radius: 15px;
+}
